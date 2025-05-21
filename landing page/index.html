@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>CLOSETRUSH - Sustainable Fashion Revolution</title>
+    <meta name="description" content="CLOSETRUSH is an emerging Indian startup dedicated to promoting sustainability and transforming the future of fashion through circular economy principles.">
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="CLOSETRUSH - Sustainable Fashion Revolution">
+    <meta property="og:description" content="Discover sustainable, upcycled, and eco-friendly fashion items that don't compromise on style or quality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://closetrush.in">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-accent">CLOSET</span><span class="logo-primary">RUSH</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="nav-icon" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#shop" class="mobile-link">Shop</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div id="three-scene-container" class="hero-bg"></div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-animation="fade-right">
+                        <h1 class="hero-title">
+                            <span class="text-primary">Sustainable Fashion</span> 
+                            <span class="text-accent">Revolution</span>
+                        </h1>
+                        <p class="hero-description">
+                            Transforming the future of fashion through circular economy, upcycling, and eco-conscious retail.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#shop" class="cta-button primary-button">
+                                Shop Conscious
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#about" class="cta-button secondary-button">
+                                Our Story
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image hover-rotate" data-animation="fade-left">
+                        <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000&q=80" alt="Sustainable fashion model">
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator-container">
+                    <div class="scroll-indicator">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p class="scroll-text">Scroll to explore</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="section mission">
+            <div class="container">
+                <div class="section-text center" data-animation="fade-up">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p class="section-description">
+                        "To reduce textile waste, promote circular consumption, and provide fast yet sustainable solutions that meet the modern consumer's expectations — without compromising the future of our planet."
+                    </p>
+                </div>
+                
+                <div class="mission-cards">
+                    <div class="mission-card" data-animation="fade-up" data-delay="0.1">
+                        <i class="fas fa-recycle"></i>
+                        <h3>Upcycling</h3>
+                        <p>Transforming pre-loved items into new fashion statements</p>
+                    </div>
+                    
+                    <div class="mission-card" data-animation="fade-up" data-delay="0.2">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Eco-conscious doesn't mean slow — we deliver quickly</p>
+                    </div>
+                    
+                    <div class="mission-card" data-animation="fade-up" data-delay="0.3">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Eco-Retail</h3>
+                        <p>Building a sustainable business model for fashion</p>
+                    </div>
+                    
+                    <div class="mission-card" data-animation="fade-up" data-delay="0.4">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Consumer Education</h3>
+                        <p>Helping people make better fashion choices</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="background-image dimmed">
+                <img src="https://pixabay.com/get/gc28fc978ad57c0c79503c0d0242979d87cbaec20569d865fd0de4ae6e010e5914cab78c2498b185a55a3f73e448f6c18d445550bb7738f7088388dfd24057331_1280.jpg" alt="Textile pattern">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-text center" data-animation="fade-up">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="section-description">
+                        CLOSETRUSH PRIVATE LIMITED is an emerging Indian startup dedicated to promoting sustainability and transforming the future of fashion.
+                    </p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text" data-animation="fade-right">
+                        <h3>Our Vision</h3>
+                        <p>
+                            To be a pioneering force in India's sustainable fashion movement, driving widespread adoption of upcycled, reusable, and ethical alternatives.
+                        </p>
+                        
+                        <h3 class="mt-large">Who We Are</h3>
+                        <p>
+                            We believe that fast fashion doesn't have to harm the planet — it just needs to evolve. Our team is committed to delivering stylish, affordable, and eco-friendly options for conscious consumers who care about the planet as much as their wardrobe.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat">
+                                <i class="fas fa-user-friends"></i>
+                                <span>2-10 employees</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Founded 2023</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-images hover-rotate" data-animation="fade-left">
+                        <img class="main-image" src="https://images.unsplash.com/photo-1556905200-bd982f883637?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" alt="Sustainable fashion workshop">
+                        
+                        <div class="image-grid">
+                            <img src="https://pixabay.com/get/g683ce2b10602ba4cabecbed22dcf1eadd5ec5f110381f6a1134ba38c7283e41186e1befd7e834145960961dadcc97e4a1772a2cfbfcfe2b9267791e0e0c66830_1280.jpg" alt="Textile recycling">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Designer working on sustainable fashion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section shop">
+            <div class="container">
+                <div class="section-text center" data-animation="fade-up">
+                    <h2 class="section-title">Shop Consciously</h2>
+                    <p class="section-description">
+                        Discover our collection of sustainable, upcycled, and eco-friendly fashion items that don't compromise on style or quality.
+                    </p>
+                </div>
+                
+                <div class="product-grid">
+                    <div class="product-card" data-animation="fade-up" data-delay="0.1">
+                        <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600&q=80" alt="Reimagined Denim Jacket">
+                        <div class="product-details">
+                            <span class="product-category">Upcycled</span>
+                            <h3 class="product-title">Reimagined Denim Jacket</h3>
+                            <p class="product-description">Handcrafted from pre-loved denim with eco-friendly embroidery</p>
+                            <div class="product-footer">
+                                <span class="product-price">₹3,499</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-animation="fade-up" data-delay="0.2">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600&q=80" alt="Organic Linen Shirt">
+                        <div class="product-details">
+                            <span class="product-category">Eco-Friendly</span>
+                            <h3 class="product-title">Organic Linen Shirt</h3>
+                            <p class="product-description">Made with 100% organic linen, dyed with natural pigments</p>
+                            <div class="product-footer">
+                                <span class="product-price">₹2,199</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-animation="fade-up" data-delay="0.3">
+                        <img src="https://images.unsplash.com/photo-1556905200-279565513a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600&q=80" alt="Ocean Plastic Tote">
+                        <div class="product-details">
+                            <span class="product-category">Recycled</span>
+                            <h3 class="product-title">Ocean Plastic Tote</h3>
+                            <p class="product-description">Created from recycled ocean plastic, durable and stylish</p>
+                            <div class="product-footer">
+                                <span class="product-price">₹1,499</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-animation="fade-up" data-delay="0.4">
+                        <img src="https://images.unsplash.com/photo-1509087859087-a384654eca4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600&q=80" alt="Textile Waste Scarf">
+                        <div class="product-details">
+                            <span class="product-category">Repurposed</span>
+                            <h3 class="product-title">Textile Waste Scarf</h3>
+                            <p class="product-description">Beautiful scarf made from repurposed textile waste</p>
+                            <div class="product-footer">
+                                <span class="product-price">₹899</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="browse-more" data-animation="fade-up">
+                    <a href="#" class="cta-button primary-button">
+                        Browse All Products
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="section impact">
+            <div class="container">
+                <div class="section-text center" data-animation="fade-up">
+                    <h2 class="section-title">Our Impact</h2>
+                    <p class="section-description">
+                        Every purchase you make helps reduce waste and create a more sustainable future.
+                    </p>
+                </div>
+                
+                <div class="impact-stats">
+                    <div class="impact-stat" data-animation="fade-up" data-delay="0.1">
+                        <div class="stat-number" id="textile-waste">0</div>
+                        <p class="stat-label">Kilograms of Textile Waste Saved</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-stat" data-animation="fade-up" data-delay="0.2">
+                        <div class="stat-number" id="water-conserved">0</div>
+                        <p class="stat-label">Liters of Water Conserved</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-stat" data-animation="fade-up" data-delay="0.3">
+                        <div class="stat-number" id="co2-reduced">0</div>
+                        <p class="stat-label">CO₂ Emissions Reduced (kg)</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-join" data-animation="fade-up">
+                    <div class="impact-content">
+                        <div class="impact-text">
+                            <h3>Join The Movement</h3>
+                            <p>
+                                We're not just selling clothes - we're building a community of conscious consumers who want to make a difference through their purchasing decisions.
+                            </p>
+                            <p>
+                                Together, we can transform the fashion industry into something sustainable, ethical, and still beautiful.
+                            </p>
+                            <a href="#contact" class="cta-button accent-button">
+                                Get Involved
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div id="globe-container" class="globe"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="background-image dimmed">
+                <img src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Recycled materials pattern">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info" data-animation="fade-right">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-description">
+                            Are you ready to make the shift to sustainable fashion? Whether you're a buyer, partner, or conscious citizen — CLOSETRUSH is your destination for change.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <h3>Phone</h3>
+                                    <p>+91 7524888707</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <h3>Email</h3>
+                                    <p>contact@closetrush.in</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <h3>Industry</h3>
+                                    <p>Retail Apparel and Fashion</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container" data-animation="fade-left">
+                        <div class="form-card">
+                            <h3>Send Us a Message</h3>
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                    <div class="error-message" id="name-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                    <div class="error-message" id="email-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                                    <div class="error-message" id="subject-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Tell us what you're looking for..." required></textarea>
+                                    <div class="error-message" id="message-error"></div>
+                                </div>
+                                
+                                <button type="submit" class="submit-button" id="contact-submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="background-image dimmed">
+                <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80" alt="Sustainable fashion pattern">
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section newsletter">
+            <div class="container">
+                <div class="newsletter-card" data-animation="fade-up">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p class="section-description">
+                        Subscribe to our newsletter for the latest sustainable fashion trends, tips, and exclusive offers.
+                    </p>
+                    
+                    <form id="newsletter-form" class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required>
+                            <div class="error-message" id="newsletter-email-error"></div>
+                        </div>
+                        <button type="submit" class="submit-button" id="newsletter-submit">Subscribe</button>
+                    </form>
+                    
+                    <p class="disclaimer">
+                        By subscribing, you agree to receive marketing communications from us. Don't worry, we respect your privacy.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-accent">CLOSET</span>RUSH
+                    </a>
+                    <p>
+                        Transforming the future of fashion through circular economy, upcycling, and eco-conscious retail.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Help & Info</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 7524888707</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@closetrush.in</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> CLOSETRUSH PRIVATE LIMITED. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <div class="toast-message">
+                <h4 id="toast-title">Success!</h4>
+                <p id="toast-description">Your message has been sent successfully.</p>
+            </div>
+            <button class="toast-close">&times;</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/three-scene.js"></script>
+    <script src="assets/js/globe.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
